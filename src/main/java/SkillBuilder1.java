@@ -10,7 +10,20 @@ public class SkillBuilder1 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        //TODO : Replace this comment with your code
+        System.out.println("You're Jane's friend!");
+        System.out.print("\"What's your name?\"");
+        String userName = input.nextLine();
+
+        System.out.println("Enter a floating-point number:");
+        double spice = input.nextDouble();
+        double nuum = Math.pow(spice,3);
+        double num = Math.sqrt(5);
+        double numm = (4.0/3)*Math.pow(2,(num/nuum));
+
+
+        System.out.println("Well "+ userName +", the spice value returned in "+ numm);
+        System.out.println("And the converted value is " + String.format("%.2f" , numm));
+        double runds = Math.round(numm * 100.0)/100.0;
 
     }
     public static void calcWallPaint() {
@@ -32,11 +45,13 @@ public class SkillBuilder1 {
         System.out.println("Enter wall width (feet):");
         wallWidth = input.nextDouble();
 
-        // TODO: Calculate and output the wall's area
+        wallArea = wallHeight * wallWidth;
+        System.out.println("Wall area: "+ wallArea + " square feet");
 
-        // TODO: Calculate and output the amount of paint in gallons needed to paint the wall
+        gallonsPaintNeeded = wallArea/squareFeetPerGallons;
+        System.out.println("Paint needed: "+ String.format("%,.2f", gallonsPaintNeeded) + "gallons");
 
-        // TODO: Calculate and output the number of 1 gallon cans needed to paint the wall, rounded up to nearest integer
-
+        cansNeeded = (int)(Math.ceil(gallonsPaintNeeded/gallonsPerCan));
+        System.out.println("Cans needed: " + cansNeeded + " can(s)");
     }
 }
