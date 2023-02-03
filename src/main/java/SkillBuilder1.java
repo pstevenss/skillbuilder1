@@ -11,7 +11,7 @@ public class SkillBuilder1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("You're Jane's friend!");
-        System.out.print("\"What's your name?\"");
+        System.out.println("\"What's your name?\"");
         String userName = input.nextLine();
 
         System.out.println("Enter a floating-point number:");
@@ -21,7 +21,7 @@ public class SkillBuilder1 {
         double numm = (4.0/3)*Math.pow(2,(num/nuum));
 
 
-        System.out.println("Well "+ userName +", the spice value returned in "+ numm);
+        System.out.println("Well "+ userName +", the spice value resulted in "+ numm);
         System.out.println("And the converted value is " + String.format("%.2f" , numm));
         double runds = Math.round(numm * 100.0)/100.0;
 
